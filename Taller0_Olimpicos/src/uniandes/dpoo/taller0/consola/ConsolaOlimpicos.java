@@ -118,11 +118,11 @@ public class ConsolaOlimpicos
 		
 		String atleta = input("Por favor ingrese el nombre de un atleta: ");
 		
-		String pais = calculadora.paisAtleta(atleta);
+		Pais elPais = calculadora.paisAtleta(atleta);
 		
-		if (pais != null)
+		if (elPais != null)
 		{
-			System.out.println("El pais del atleta " + atleta + " es:" + pais);
+			System.out.println("El pais del atleta " + atleta + " es:" + elPais.darNombre());
 		}
 		else
 		{

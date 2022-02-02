@@ -433,15 +433,13 @@ public class CalculadoraEstadisticas
 	 * @param nombrePais El nombre del atleta
 	 * @return La nacionalidad del atleta
 	 */
-	public String paisAtleta(String atleta)
+	public Pais paisAtleta(String atleta)
 	{
-		Atleta infoAtleta = null;
-		String elPais = null;
+		Pais elPais = null;
 		for (int i = 0; i < atletas.size() && elPais == null; i++)
 		{
 			if (atletas.get(i).darNombre().equals(atleta))
-				infoAtleta = atletas.get(i);
-				elPais = infoAtleta.darNombre();
+				elPais = atletas.get(i).darPais();				
 		}
 		return elPais;
 	}
